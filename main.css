@@ -1,0 +1,81 @@
+body{
+    background-color: red;
+}
+
+.nav-flex-container{
+    display: flex;
+    margin: 20px 35% 40px 35%;
+}
+
+.nav-flex-container img{
+    width: 100px;
+    height: auto;
+}
+
+.main-grid-container{
+    position: relative;
+    display:grid;
+    width: 150px;
+    height: auto;
+    margin: auto 36%;
+}
+
+#play{
+    margin-top: 20px;
+    background-color:yellow;
+    border-radius: 10px;
+}
+
+#random-movie{
+    background-color:aqua;
+}
+
+.movie-grid-container{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(1fr, 4);
+    margin-top: 20px;
+}
+
+.movie-grid-item{
+    padding: 10px;
+}
+
+/*Poster*/
+.movie-grid-item:nth-child(1){ 
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/*Overview*/
+.movie-grid-item:nth-child(2){
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+/*Runtime*/
+.movie-grid-item:nth-child(3){
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 100px;
+}
+
+/*release date*/
+.movie-grid-item:nth-child(4){
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#movie-data img{
+    width: 150px;
+    height: auto;
+}
+
+
