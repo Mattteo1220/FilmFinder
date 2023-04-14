@@ -24,6 +24,7 @@ body{
     margin-top: 20px;
     background-color:yellow;
     border-radius: 10px;
+    cursor:pointer;
 }
 
 #random-movie{
